@@ -7,6 +7,7 @@ def createFolder():
     if os.path.exists('.\\htmlPages') == False:
         os.makedirs('.\\htmlPages')
 
+#create html file for an array of data
 def createHTML(row):
     file = open('.\\htmlPages' + '\\' + row[0] + '.html', 'w')
     data = """<html>
