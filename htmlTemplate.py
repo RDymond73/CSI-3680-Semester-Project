@@ -31,4 +31,5 @@ def createHTML(row):
 
 test = ['Rick Dymond', '11/10/99', 'Test1', 'Test2', 'Test3', 'Test4', 'Test5']
 
+createTemplate()
 createHTML(test)
