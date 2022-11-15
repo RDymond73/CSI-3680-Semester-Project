@@ -3,7 +3,7 @@
 import os, webbrowser
 
 #create folder for html pages if it doesn't exist
-def createTemplate():
+def createFolder():
     if os.path.exists('.\\htmlPages') == False:
         os.makedirs('.\\htmlPages')
 
