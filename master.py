@@ -10,7 +10,11 @@ def master():
     # get data from csv file
     data = readCSV()
     #create html page for data
-    # for i in test:
-    createHTML(data[2])
+    
+    i = 4
+    while i > 0:
+        createHTML(data[i])
+        i = i - 1
+        continue
 
 master()

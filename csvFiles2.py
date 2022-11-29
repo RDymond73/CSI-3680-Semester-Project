@@ -14,11 +14,14 @@ def readCSV():
         with open(csvFilename, 'r') as file:
             csvReader = csv.reader(file)
             for row in csvReader:
+                dataRow = []
+                # print(row)
                 for cell in row:
-                    dataRow = []
-                    dataRow.append(cell)
+                    #  print(cell)
+                     dataRow.append(cell)
                 dataCSV.append(dataRow)
             print(dataCSV)
+            return dataCSV
             
 
 
