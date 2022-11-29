@@ -11,8 +11,8 @@ def master():
     data = readCSV()
     #create html page for data
     
-    i = 4
-    while i > 0:
+    i = getRowNum()
+    while i >= 0:
         createHTML(data[i])
         i = i - 1
         continue

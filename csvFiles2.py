@@ -22,10 +22,23 @@ def readCSV():
                 dataCSV.append(dataRow)
             print(dataCSV)
             return dataCSV
+
+def getRowNum():
+    for csvFilename in os.listdir('.'): 
+        if not csvFilename.endswith('.csv'):
+            continue # skip non-csv files 
+        with open(csvFilename, 'r') as file:
+            csvReader = csv.reader(file)
+            counterRow = 0
+            for row in csvReader:
+                counterRow = counterRow + 1
+            #print(counterRow)
+            return counterRow - 1
             
 
 
-readCSV()
+#readCSV()
+getRowNum()
 
 # Using glob
 #path = os.getcwd()
