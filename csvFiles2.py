@@ -1,19 +1,26 @@
 import csv
-import pandas as pd
+#import pandas as pd
 import os
 import glob
 
 
 def readCSV():
+    dataCSV = []
 # Get only csv files.
     for csvFilename in os.listdir('.'): 
         if not csvFilename.endswith('.csv'):
             continue # skip non-csv files 
         
-    with open(csvFilename, 'r') as file:
-        csvReader = csv.reader(file)
-        for row in csvReader:
-            print(row)
+        with open(csvFilename, 'r') as file:
+            csvReader = csv.reader(file)
+            for row in csvReader:
+                for cell in row:
+                    dataRow = []
+                    dataRow.append(cell)
+                dataCSV.append(dataRow)
+            print(dataCSV)
+            
+
 
 readCSV()
 
