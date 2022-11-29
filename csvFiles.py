@@ -1,6 +1,7 @@
 import csv, os
 
 def readCSV():
+    data = [] 
 # Get only csv files.
     for csvFilename in os.listdir('.'): 
         if not csvFilename.endswith('.csv'):
@@ -9,6 +10,11 @@ def readCSV():
     with open(csvFilename, 'r') as file:
         csvReader = csv.reader(file)
         for row in csvReader:
-            print(row)
+            for cell in row:
+                # print(row)
+                data.append(row)
+                print(data)
+            
+
 
 readCSV()
