@@ -38,7 +38,7 @@ def getRowNum():
 
 
 #readCSV()
-getRowNum()
+#getRowNum()
 
 # Using glob
 #path = os.getcwd()

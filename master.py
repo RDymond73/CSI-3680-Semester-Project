@@ -1,7 +1,7 @@
 from htmlTemplate import *
 from csvFiles2 import *
 
-test = [['Rick Dymond', '11/10/99', 'Test1', 'Test2', 'Test3', 'Test4', 'Test5'], ['Rick Dymond', '11/10/99', 'Test1', 'Test2', 'Test3', 'Test4', 'Test5'], ['Rick Dymond', '11/10/99', 'Test1', 'Test2', 'Test3', 'Test4', 'Test5']]
+#test = [['Rick Dymond', '11/10/99', 'Test1', 'Test2', 'Test3', 'Test4', 'Test5'], ['Rick Dymond', '11/10/99', 'Test1', 'Test2', 'Test3', 'Test4', 'Test5'], ['Rick Dymond', '11/10/99', 'Test1', 'Test2', 'Test3', 'Test4', 'Test5']]
 
 
 def master():
@@ -10,7 +10,6 @@ def master():
     # get data from csv file
     data = readCSV()
     #create html page for data
-    
     i = getRowNum()
     while i >= 0:
         createHTML(data[i])

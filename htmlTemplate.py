@@ -15,12 +15,12 @@ def createHTML(row):
             <head></head>
             <body>
                 <h1 ALIGN=CENTER>""" + row[0] + """</h1>
-                <h2 ALIGN=CENTER>""" + row[1] + """</h2>
-                <p ALIGN=CENTER>""" + row[2] + """</p>
-                <p ALIGN=CENTER>""" + row[3] + """</p>
-                <p ALIGN=CENTER>""" + row[4] + """</p>
-                <p ALIGN=CENTER>""" + row[5] + """</p>
-                <p ALIGN=CENTER>""" + row[6] + """</p>
+                <h2 ALIGN=CENTER>""" + "DOB: " + row[1] + """</h2>
+                <p ALIGN=CENTER>""" + "Role: " + row[2] + """</p>
+                <p ALIGN=CENTER>""" + "Favorite food: " + row[3] + """</p>
+                <p ALIGN=CENTER>""" + "Favorite Sport: " + row[4] + """</p>
+                <p ALIGN=CENTER>""" + "Favorite cars: " + row[5] + """</p>
+                <p ALIGN=CENTER>""" + "Phone: " + row[6] + """</p>
             </body>
             
             </html>"""
